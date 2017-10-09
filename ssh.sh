@@ -31,7 +31,7 @@ cd
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 
 # check registered ip
-wget -q -O daftarip https://raw.githubusercontent.com/elhad/cstup/master/ip.txt
+wget -q -O daftarip https://raw.githubusercontent.com/jirapan2000/new2web/master/ip.txt
 if ! grep -w -q $MYIP daftarip; then
 	echo "Maaf, hanya IP yang terdaftar yang bisa menggunakan script ini!"
 	if [[ $vps = "FNS" ]]; then
